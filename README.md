@@ -7,25 +7,24 @@
 
 <p align="center">
   I study Information and Computing Science at Xiamen University.<br />
-  Most days, I am somewhere between a research question and the code needed to test it.
+  My interests sit where mathematical modeling, generative AI, and dependable software meet.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-0B2430?style=flat-square&logo=python&logoColor=54E3B5" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-0B2430?style=flat-square&logo=pytorch&logoColor=54E3B5" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/C%2B%2B-0B2430?style=flat-square&logo=cplusplus&logoColor=54E3B5" alt="C++" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/TypeScript-0B2430?style=flat-square&logo=typescript&logoColor=54E3B5" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-0B2430?style=flat-square&logo=react&logoColor=54E3B5" alt="React" />
-  <img src="https://img.shields.io/badge/Cloudflare_Workers-0B2430?style=flat-square&logo=cloudflareworkers&logoColor=54E3B5" alt="Cloudflare Workers" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,cpp,ts,react,cloudflare&theme=dark&perline=6" />
+    <img src="https://skillicons.dev/icons?i=python,pytorch,cpp,ts,react,cloudflare&theme=light&perline=6" alt="Python, PyTorch, C++, TypeScript, React, and Cloudflare" />
+  </picture>
 </p>
 
 <table>
   <tr>
-    <td align="center" width="33%"><strong>64+</strong><br /><sub>public commits on Xingma Qihang</sub></td>
-    <td align="center" width="33%"><strong>73</strong><br /><sub>coding tasks with trusted checks</sub></td>
-    <td align="center" width="33%"><strong>5</strong><br /><sub>merged upstream pull requests</sub></td>
+    <td width="50%" valign="top"><strong>AI for Science</strong><br /><sub>Physics-aware generation, mathematical modeling, and optimization.</sub></td>
+    <td width="50%" valign="top"><strong>Reliable AI systems</strong><br /><sub>Reproducibility, validation, failure handling, and security boundaries.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><strong>Product engineering</strong><br /><sub>Browser experiences, typed frontends, APIs, and cloud data paths.</sub></td>
+    <td width="50%" valign="top"><strong>Open-source quality</strong><br /><sub>Focused fixes, regression tests, and reviewable design decisions.</sub></td>
   </tr>
 </table>
 
@@ -37,25 +36,19 @@ An original browser-based Python learning platform for young learners. I worked 
 
 [Live application](https://python.farly.me) | [My commits](https://github.com/farlyfeifei/xingma-qihang/commits/main/?author=wunianze666-netizen) | [Architecture and constraints](https://github.com/farlyfeifei/xingma-qihang#架构)
 
-## Open-source engineering
+## Selected upstream work
 
 - **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** - closed SSRF gaps in external image downloads and injected HTTP sessions, backed by adversarial socket-level tests ([#9525](https://github.com/invoke-ai/InvokeAI/pull/9525), [#9524](https://github.com/invoke-ai/InvokeAI/pull/9524)).
 - **[Hugging Face Diffusers](https://github.com/huggingface/diffusers)** - fixed required-input metadata for custom Mellon pipeline blocks ([#13888](https://github.com/huggingface/diffusers/pull/13888)).
 - **[sktime](https://github.com/sktime/sktime)** - migrated the multithreading capability to the typed tag registry without changing lookup behavior ([#10848](https://github.com/sktime/sktime/pull/10848)).
 - **[Soda Core](https://github.com/sodadata/soda-core)** - prevented SQL Server connection parameter values from leaking into logs ([#2762](https://github.com/sodadata/soda-core/pull/2762)).
 
-## Current direction
+## Now
 
-I am exploring physics-aware generative modeling and optimization for AI4S, alongside reliability and security in generative AI infrastructure. I care about work that can be reproduced, tested under failure, and explained from design decision to observable result.
+I am exploring physics-aware generative modeling and optimization for AI4S, alongside reliability and security in generative AI infrastructure. I prefer work that can be reproduced, tested under failure, and explained from a design decision to an observable result.
 
-## Contribution rhythm
+## Beyond the model
 
-<p align="center">
-  <a href="https://github.com/wunianze666-netizen?tab=overview">
-    <img src="https://ghchart.rshah.org/54e3b5/wunianze666-netizen" alt="Nianze Wu's public GitHub contribution calendar" width="100%" />
-  </a>
-</p>
+I also care about visual explanation, clean interfaces, and concise technical writing. Research is easier to trust when another person can understand the assumptions, run the code, and see how it fails.
 
-## A little more
-
-I like clean interfaces, concise technical writing, and software that still makes sense when something goes wrong. I am open to thoughtful collaboration around AI4S, generative systems, and reliable ML infrastructure.
+Open to thoughtful collaboration around AI4S, generative systems, and reliable ML infrastructure.
