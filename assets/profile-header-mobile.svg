@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-labelledby="title description">
+  <title id="title">Nianze Wu</title>
+  <desc id="description">AI for Science, generative systems, and open-source engineering</desc>
+  <defs>
+    <style>
+      .flow-line { animation: flow 10s linear infinite; }
+      .pulse-node {
+        animation: pulse 3.6s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes flow { to { stroke-dashoffset: -160; } }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.45; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.2); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .flow-line, .pulse-node { animation: none; }
+      }
+    </style>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f" />
+      <stop offset="0.58" stop-color="#0b2430" />
+      <stop offset="1" stop-color="#12372e" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#54e3b5" stop-opacity="0.38" />
+      <stop offset="1" stop-color="#54e3b5" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0 L0 0 0 28" fill="none" stroke="#8fdcc5" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <rect width="680" height="360" rx="28" fill="url(#background)" />
+  <rect width="680" height="360" rx="28" fill="url(#grid)" />
+  <circle cx="602" cy="18" r="190" fill="url(#glow)" />
+
+  <g fill="none" stroke="#79e8c7" stroke-opacity="0.4">
+    <path d="M408 94 C470 44 544 45 652 104" stroke-width="2" />
+    <path class="flow-line" d="M391 124 C481 73 551 92 663 151" stroke-width="1" stroke-dasharray="7 9" />
+    <ellipse cx="553" cy="90" rx="91" ry="47" transform="rotate(12 553 90)" />
+  </g>
+  <g fill="#9cf2d7">
+    <circle cx="456" cy="65" r="4" />
+    <circle class="pulse-node" cx="553" cy="90" r="7" />
+    <circle cx="632" cy="92" r="4" />
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="44" y="126" fill="#f4fbf8" font-size="62" font-weight="700" letter-spacing="1">Nianze Wu</text>
+    <text x="47" y="173" fill="#b9d8cf" font-size="23">AI for Science and reliable generative systems</text>
+
+    <g font-size="15" font-weight="600" letter-spacing="1.3">
+      <rect x="46" y="220" width="149" height="40" rx="20" fill="#54e3b5" fill-opacity="0.14" stroke="#54e3b5" stroke-opacity="0.55" />
+      <text x="69" y="246" fill="#9cf2d7">AI FOR SCIENCE</text>
+
+      <rect x="207" y="220" width="218" height="40" rx="20" fill="#54e3b5" fill-opacity="0.1" stroke="#54e3b5" stroke-opacity="0.42" />
+      <text x="230" y="246" fill="#c3e8dd">GENERATIVE SYSTEMS</text>
+
+      <rect x="437" y="220" width="163" height="40" rx="20" fill="#54e3b5" fill-opacity="0.08" stroke="#54e3b5" stroke-opacity="0.35" />
+      <text x="460" y="246" fill="#c3e8dd">OPEN SOURCE</text>
+    </g>
+  </g>
+</svg>
