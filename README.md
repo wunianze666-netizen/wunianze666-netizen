@@ -12,8 +12,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,pytorch,cpp,ts,react,cloudflare&theme=dark&perline=6" />
-    <img src="https://skillicons.dev/icons?i=python,pytorch,cpp,ts,react,cloudflare&theme=light&perline=6" alt="Python, PyTorch, C++, TypeScript, React, and Cloudflare" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cpytorch%2Ccpp%2Cts%2Creact%2Ccloudflare&amp;theme=dark&amp;perline=6" />
+    <img src="https://skillicons.dev/icons?i=python%2Cpytorch%2Ccpp%2Cts%2Creact%2Ccloudflare&amp;theme=light&amp;perline=6" alt="Python, PyTorch, C++, TypeScript, React, and Cloudflare" />
   </picture>
 </p>
 

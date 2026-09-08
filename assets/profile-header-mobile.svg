@@ -1,65 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390" role="img" aria-labelledby="title description">
   <title id="title">Nianze Wu</title>
-  <desc id="description">AI for Science, generative systems, and open-source engineering</desc>
+  <desc id="description">AI for Science, generative systems, reliable software, and open-source engineering</desc>
   <defs>
     <style>
-      .flow-line { animation: flow 10s linear infinite; }
-      .pulse-node {
-        animation: pulse 3.6s ease-in-out infinite;
+      .trace { animation: trace 14s linear infinite; }
+      .pulse {
+        animation: pulse 4.8s ease-in-out infinite;
         transform-box: fill-box;
         transform-origin: center;
       }
-      @keyframes flow { to { stroke-dashoffset: -160; } }
+      .scan { animation: scan 7s ease-in-out infinite; }
+      @keyframes trace { to { stroke-dashoffset: -180; } }
       @keyframes pulse {
-        0%, 100% { opacity: 0.45; transform: scale(0.8); }
-        50% { opacity: 1; transform: scale(1.2); }
+        0%, 100% { opacity: 0.38; transform: scale(0.82); }
+        50% { opacity: 1; transform: scale(1.18); }
+      }
+      @keyframes scan {
+        0%, 100% { opacity: 0.08; transform: translateX(-14px); }
+        50% { opacity: 0.28; transform: translateX(16px); }
       }
       @media (prefers-reduced-motion: reduce) {
-        .flow-line, .pulse-node { animation: none; }
+        .trace, .pulse, .scan { animation: none; }
       }
     </style>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07111f" />
-      <stop offset="0.58" stop-color="#0b2430" />
-      <stop offset="1" stop-color="#12372e" />
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#051019" />
+      <stop offset="0.57" stop-color="#09212a" />
+      <stop offset="1" stop-color="#10372f" />
+    </linearGradient>
+    <linearGradient id="hairline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#76f0cb" stop-opacity="0.88" />
+      <stop offset="1" stop-color="#7db9ff" stop-opacity="0.22" />
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#54e3b5" stop-opacity="0.38" />
-      <stop offset="1" stop-color="#54e3b5" stop-opacity="0" />
+      <stop offset="0" stop-color="#55e6bc" stop-opacity="0.31" />
+      <stop offset="1" stop-color="#55e6bc" stop-opacity="0" />
     </radialGradient>
     <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0 L0 0 0 28" fill="none" stroke="#8fdcc5" stroke-opacity="0.08" />
+      <path d="M28 0H0V28" fill="none" stroke="#a6d8d1" stroke-opacity="0.07" />
     </pattern>
+    <filter id="nodeGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+    <clipPath id="frame">
+      <rect width="680" height="390" rx="28" />
+    </clipPath>
   </defs>
 
-  <rect width="680" height="360" rx="28" fill="url(#background)" />
-  <rect width="680" height="360" rx="28" fill="url(#grid)" />
-  <circle cx="602" cy="18" r="190" fill="url(#glow)" />
+  <g clip-path="url(#frame)">
+    <rect width="680" height="390" fill="url(#bg)" />
+    <rect width="680" height="390" fill="url(#grid)" />
+    <circle cx="615" cy="24" r="190" fill="url(#glow)" />
 
-  <g fill="none" stroke="#79e8c7" stroke-opacity="0.4">
-    <path d="M408 94 C470 44 544 45 652 104" stroke-width="2" />
-    <path class="flow-line" d="M391 124 C481 73 551 92 663 151" stroke-width="1" stroke-dasharray="7 9" />
-    <ellipse cx="553" cy="90" rx="91" ry="47" transform="rotate(12 553 90)" />
-  </g>
-  <g fill="#9cf2d7">
-    <circle cx="456" cy="65" r="4" />
-    <circle class="pulse-node" cx="553" cy="90" r="7" />
-    <circle cx="632" cy="92" r="4" />
-  </g>
-
-  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="44" y="126" fill="#f4fbf8" font-size="62" font-weight="700" letter-spacing="1">Nianze Wu</text>
-    <text x="47" y="173" fill="#b9d8cf" font-size="23">AI for Science and reliable generative systems</text>
-
-    <g font-size="15" font-weight="600" letter-spacing="1.3">
-      <rect x="46" y="220" width="149" height="40" rx="20" fill="#54e3b5" fill-opacity="0.14" stroke="#54e3b5" stroke-opacity="0.55" />
-      <text x="69" y="246" fill="#9cf2d7">AI FOR SCIENCE</text>
-
-      <rect x="207" y="220" width="218" height="40" rx="20" fill="#54e3b5" fill-opacity="0.1" stroke="#54e3b5" stroke-opacity="0.42" />
-      <text x="230" y="246" fill="#c3e8dd">GENERATIVE SYSTEMS</text>
-
-      <rect x="437" y="220" width="163" height="40" rx="20" fill="#54e3b5" fill-opacity="0.08" stroke="#54e3b5" stroke-opacity="0.35" />
-      <text x="460" y="246" fill="#c3e8dd">OPEN SOURCE</text>
+    <g transform="translate(430 26)" fill="none">
+      <ellipse cx="126" cy="72" rx="112" ry="51" transform="rotate(10 126 72)" stroke="#76f0cb" stroke-opacity="0.34" />
+      <ellipse cx="126" cy="72" rx="83" ry="34" transform="rotate(-13 126 72)" stroke="#7db9ff" stroke-opacity="0.24" />
+      <path d="M5 126 C55 84 92 99 119 61 S179 22 236 53" stroke="url(#hairline)" stroke-width="2" />
+      <path class="trace" d="M-2 146 C55 108 94 118 135 83 S195 48 248 72" stroke="#76f0cb" stroke-opacity="0.42" stroke-dasharray="6 9" />
+      <line class="scan" x1="134" y1="7" x2="134" y2="149" stroke="#7db9ff" stroke-opacity="0.4" />
+      <g fill="#b5fae6" stroke="none">
+        <circle cx="40" cy="100" r="4" />
+        <circle class="pulse" cx="126" cy="72" r="6" />
+        <circle cx="211" cy="42" r="4" />
+      </g>
+      <circle cx="126" cy="72" r="14" fill="#55e6bc" opacity="0.3" stroke="none" filter="url(#nodeGlow)" />
     </g>
+
+    <path d="M0 347 C155 317 310 374 480 337 S605 318 680 326" fill="none" stroke="#76f0cb" stroke-opacity="0.12" />
+  </g>
+
+  <g font-family="Bahnschrift, Trebuchet MS, sans-serif">
+    <line x1="43" y1="43" x2="43" y2="302" stroke="#76f0cb" stroke-width="2" />
+    <text x="63" y="55" fill="#8fbdb5" font-family="Consolas, monospace" font-size="12" letter-spacing="2.5">AI + SCIENCE / OPEN SOURCE</text>
+    <text x="59" y="126" fill="#f5fbf9" font-size="58" font-weight="600">Nianze Wu</text>
+    <text x="63" y="174" fill="#c2ddd7" font-size="22">AI for Science, generative systems,</text>
+    <text x="63" y="207" fill="#c2ddd7" font-size="22">and software that can be tested.</text>
+
+    <g font-family="Consolas, monospace" font-size="14" font-weight="600" letter-spacing="1.1">
+      <text x="63" y="260" fill="#8ff2d3">AI4S</text>
+      <rect x="123" y="248" width="3" height="3" fill="#4e8179" />
+      <text x="145" y="260" fill="#bad9d2">GENERATIVE SYSTEMS</text>
+      <text x="63" y="294" fill="#bad9d2">RELIABLE ML</text>
+      <rect x="180" y="282" width="3" height="3" fill="#4e8179" />
+      <text x="202" y="294" fill="#bad9d2">PRODUCT ENGINEERING</text>
+    </g>
+
+    <line x1="63" y1="321" x2="611" y2="321" stroke="#8fbdb5" stroke-opacity="0.22" />
+    <text x="63" y="350" fill="#789f98" font-family="Consolas, monospace" font-size="12" letter-spacing="1.35">INFORMATION + COMPUTING SCIENCE / XIAMEN UNIVERSITY</text>
   </g>
 </svg>

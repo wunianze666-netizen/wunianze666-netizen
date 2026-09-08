@@ -1,80 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
   <title id="title">Nianze Wu</title>
-  <desc id="description">AI for Science, generative systems, and open-source engineering</desc>
+  <desc id="description">AI for Science, generative systems, reliable software, and open-source engineering</desc>
   <defs>
     <style>
-      .flow-line {
-        animation: flow 10s linear infinite;
-      }
-      .pulse-node {
-        animation: pulse 3.6s ease-in-out infinite;
+      .trace { animation: trace 14s linear infinite; }
+      .trace-slow { animation: trace 22s linear infinite reverse; }
+      .pulse {
+        animation: pulse 4.8s ease-in-out infinite;
         transform-box: fill-box;
         transform-origin: center;
       }
-      @keyframes flow {
-        to { stroke-dashoffset: -160; }
+      .drift {
+        animation: drift 8s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
       }
+      .scan { animation: scan 7s ease-in-out infinite; }
+      @keyframes trace { to { stroke-dashoffset: -220; } }
       @keyframes pulse {
-        0%, 100% { opacity: 0.45; transform: scale(0.8); }
-        50% { opacity: 1; transform: scale(1.25); }
+        0%, 100% { opacity: 0.38; transform: scale(0.82); }
+        50% { opacity: 1; transform: scale(1.18); }
+      }
+      @keyframes drift {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(7px, -5px); }
+      }
+      @keyframes scan {
+        0%, 100% { opacity: 0.08; transform: translateX(-22px); }
+        50% { opacity: 0.32; transform: translateX(24px); }
       }
       @media (prefers-reduced-motion: reduce) {
-        .flow-line, .pulse-node { animation: none; }
+        .trace, .trace-slow, .pulse, .drift, .scan { animation: none; }
       }
     </style>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07111f" />
-      <stop offset="0.55" stop-color="#0b2430" />
-      <stop offset="1" stop-color="#12372e" />
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#051019" />
+      <stop offset="0.54" stop-color="#09212a" />
+      <stop offset="1" stop-color="#10372f" />
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#54e3b5" stop-opacity="0.42" />
-      <stop offset="1" stop-color="#54e3b5" stop-opacity="0" />
+    <linearGradient id="hairline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#76f0cb" stop-opacity="0.92" />
+      <stop offset="1" stop-color="#7db9ff" stop-opacity="0.24" />
+    </linearGradient>
+    <radialGradient id="mintGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#55e6bc" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#55e6bc" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#8fdcc5" stroke-opacity="0.09" />
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#63a8ff" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#63a8ff" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#a6d8d1" stroke-opacity="0.075" />
     </pattern>
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+    <filter id="nodeGlow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="5" />
     </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="360" rx="30" />
+    </clipPath>
   </defs>
 
-  <rect width="1200" height="320" rx="28" fill="url(#background)" />
-  <rect width="1200" height="320" rx="28" fill="url(#grid)" />
-  <circle cx="1030" cy="62" r="255" fill="url(#glow)" />
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#bg)" />
+    <rect width="1200" height="360" fill="url(#grid)" />
+    <circle cx="1050" cy="38" r="275" fill="url(#mintGlow)" />
+    <circle cx="755" cy="355" r="245" fill="url(#blueGlow)" />
+    <ellipse cx="1040" cy="190" rx="132" ry="104" fill="#55e6bc" opacity="0.07" filter="url(#blur)" />
 
-  <g fill="none" stroke="#79e8c7" stroke-opacity="0.45">
-    <path d="M790 244 C850 173 897 181 941 117 S1047 52 1144 100" stroke-width="2" />
-    <path class="flow-line" d="M805 271 C882 221 913 232 972 182 S1085 123 1164 145" stroke-width="1" stroke-dasharray="7 9" />
-    <ellipse cx="1015" cy="153" rx="132" ry="76" transform="rotate(-17 1015 153)" />
-  </g>
+    <path d="M0 314 C260 270 428 352 675 300 S1006 253 1200 281" fill="none" stroke="#7db9ff" stroke-opacity="0.1" />
+    <path d="M0 322 C248 282 442 359 675 311 S1014 265 1200 291" fill="none" stroke="#76f0cb" stroke-opacity="0.13" />
 
-  <g fill="#9cf2d7">
-    <circle cx="833" cy="205" r="5" />
-    <circle cx="941" cy="117" r="6" />
-    <circle class="pulse-node" cx="1015" cy="153" r="8" />
-    <circle cx="1101" cy="78" r="5" />
-    <circle cx="1128" cy="188" r="4" />
-  </g>
-  <circle cx="1015" cy="153" r="18" fill="#54e3b5" opacity="0.28" filter="url(#soft-glow)" />
-  <circle r="5" fill="#d9fff3">
-    <animateMotion dur="7s" repeatCount="indefinite" path="M790 244 C850 173 897 181 941 117 S1047 52 1144 100" />
-    <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite" />
-  </circle>
+    <g transform="translate(735 34)">
+      <text x="14" y="19" fill="#9ccbc2" font-family="Consolas, monospace" font-size="11" letter-spacing="2.4">STATE SPACE / 01</text>
+      <line x1="14" y1="35" x2="415" y2="35" stroke="#93c9c0" stroke-opacity="0.15" />
+      <line class="scan" x1="212" y1="45" x2="212" y2="282" stroke="#7db9ff" stroke-opacity="0.48" />
 
-  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="76" y="116" fill="#f4fbf8" font-size="56" font-weight="700" letter-spacing="1">Nianze Wu</text>
-    <text x="79" y="158" fill="#b9d8cf" font-size="22" font-weight="400">Information and Computing Science at Xiamen University</text>
+      <g class="drift" fill="none">
+        <ellipse cx="258" cy="150" rx="164" ry="88" transform="rotate(-14 258 150)" stroke="#76f0cb" stroke-opacity="0.42" />
+        <ellipse cx="258" cy="150" rx="127" ry="62" transform="rotate(17 258 150)" stroke="#7db9ff" stroke-opacity="0.3" />
+        <path d="M39 241 C103 176 150 207 199 135 S313 54 410 102" stroke="url(#hairline)" stroke-width="2.2" />
+        <path class="trace" d="M29 267 C102 223 166 229 220 172 S337 98 425 129" stroke="#76f0cb" stroke-opacity="0.46" stroke-dasharray="7 10" />
+        <path class="trace-slow" d="M79 70 C147 113 170 87 235 111 S348 187 404 226" stroke="#7db9ff" stroke-opacity="0.3" stroke-dasharray="3 11" />
+      </g>
 
-    <g font-size="15" font-weight="600" letter-spacing="1.6">
-      <rect x="78" y="202" width="150" height="38" rx="19" fill="#54e3b5" fill-opacity="0.14" stroke="#54e3b5" stroke-opacity="0.55" />
-      <text x="101" y="227" fill="#9cf2d7">AI FOR SCIENCE</text>
+      <g fill="#b5fae6">
+        <circle cx="75" cy="212" r="4" />
+        <circle cx="199" cy="135" r="5" />
+        <circle class="pulse" cx="270" cy="145" r="7" />
+        <circle cx="350" cy="79" r="4" />
+        <circle cx="400" cy="185" r="4" />
+      </g>
+      <circle cx="270" cy="145" r="18" fill="#55e6bc" opacity="0.34" filter="url(#nodeGlow)" />
 
-      <rect x="242" y="202" width="218" height="38" rx="19" fill="#54e3b5" fill-opacity="0.1" stroke="#54e3b5" stroke-opacity="0.42" />
-      <text x="265" y="227" fill="#c3e8dd">GENERATIVE SYSTEMS</text>
+      <circle r="4.5" fill="#e8fff8">
+        <animateMotion dur="8s" repeatCount="indefinite" path="M39 241 C103 176 150 207 199 135 S313 54 410 102" />
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite" />
+      </circle>
 
-      <rect x="474" y="202" width="163" height="38" rx="19" fill="#54e3b5" fill-opacity="0.08" stroke="#54e3b5" stroke-opacity="0.35" />
-      <text x="497" y="227" fill="#c3e8dd">OPEN SOURCE</text>
+      <g fill="#91beb6" font-family="Consolas, monospace" font-size="10">
+        <text x="38" y="283">x / observation</text>
+        <text x="332" y="270">t / iteration</text>
+        <text x="279" y="136" fill="#d8fff3">f(theta)</text>
+      </g>
     </g>
+  </g>
+
+  <g font-family="Bahnschrift, Trebuchet MS, sans-serif">
+    <line x1="76" y1="61" x2="76" y2="267" stroke="#76f0cb" stroke-width="2" />
+    <text x="98" y="67" fill="#8fbdb5" font-family="Consolas, monospace" font-size="12" letter-spacing="2.8">RESEARCH / ENGINEERING / OPEN SOURCE</text>
+    <text x="94" y="145" fill="#f5fbf9" font-size="62" font-weight="600" letter-spacing="0.6">Nianze Wu</text>
+    <text x="98" y="188" fill="#c2ddd7" font-size="21">AI for Science, generative systems, and software that can be tested.</text>
+
+    <g font-family="Consolas, monospace" font-size="12" font-weight="600" letter-spacing="1.2">
+      <text x="98" y="239" fill="#8ff2d3">AI4S</text>
+      <rect x="151" y="228" width="3" height="3" fill="#4e8179" />
+      <text x="171" y="239" fill="#bad9d2">GENERATIVE SYSTEMS</text>
+      <rect x="330" y="228" width="3" height="3" fill="#4e8179" />
+      <text x="350" y="239" fill="#bad9d2">RELIABLE ML</text>
+      <rect x="458" y="228" width="3" height="3" fill="#4e8179" />
+      <text x="478" y="239" fill="#bad9d2">PRODUCT ENGINEERING</text>
+    </g>
+
+    <line x1="98" y1="273" x2="614" y2="273" stroke="#8fbdb5" stroke-opacity="0.22" />
+    <text x="98" y="300" fill="#789f98" font-family="Consolas, monospace" font-size="11" letter-spacing="1.6">INFORMATION + COMPUTING SCIENCE / XIAMEN UNIVERSITY</text>
   </g>
 </svg>
