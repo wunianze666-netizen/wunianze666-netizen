@@ -68,24 +68,19 @@ I worked on D1-backed course and progress data, Auth0 integration, trusted check
 
 <table>
   <tr>
-    <td width="25%" valign="top"><strong><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></strong><br /><sub>SECURITY / PYTHON</sub></td>
-    <td valign="top">Closed two SSRF paths in external image downloads and injected HTTP sessions, backed by adversarial socket-level tests (<a href="https://github.com/invoke-ai/InvokeAI/pull/9525">#9525</a>, <a href="https://github.com/invoke-ai/InvokeAI/pull/9524">#9524</a>).</td>
+    <td valign="top"><strong><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></strong>&nbsp; <sub>SECURITY / PYTHON</sub><br />Closed two SSRF paths in external image downloads and injected HTTP sessions, backed by adversarial socket-level tests (<a href="https://github.com/invoke-ai/InvokeAI/pull/9525">#9525</a>, <a href="https://github.com/invoke-ai/InvokeAI/pull/9524">#9524</a>).</td>
   </tr>
   <tr>
-    <td width="25%" valign="top"><strong><a href="https://github.com/huggingface/diffusers">Diffusers</a></strong><br /><sub>GENERATIVE AI / PYTHON</sub></td>
-    <td valign="top">Corrected required-input metadata for custom Mellon pipeline blocks and added focused regression coverage (<a href="https://github.com/huggingface/diffusers/pull/13888">#13888</a>).</td>
+    <td valign="top"><strong><a href="https://github.com/huggingface/diffusers">Diffusers</a></strong>&nbsp; <sub>GENERATIVE AI / PYTHON</sub><br />Corrected required-input metadata for custom Mellon pipeline blocks and added focused regression coverage (<a href="https://github.com/huggingface/diffusers/pull/13888">#13888</a>).</td>
   </tr>
   <tr>
-    <td width="25%" valign="top"><strong><a href="https://github.com/sktime/sktime">sktime</a></strong><br /><sub>ML INFRA / TYPING</sub></td>
-    <td valign="top">Migrated the multithreading capability to the typed tag registry while preserving lookup behavior (<a href="https://github.com/sktime/sktime/pull/10848">#10848</a>).</td>
+    <td valign="top"><strong><a href="https://github.com/sktime/sktime">sktime</a></strong>&nbsp; <sub>ML INFRA / TYPING</sub><br />Migrated the multithreading capability to the typed tag registry while preserving lookup behavior (<a href="https://github.com/sktime/sktime/pull/10848">#10848</a>).</td>
   </tr>
   <tr>
-    <td width="25%" valign="top"><strong><a href="https://github.com/sodadata/soda-core">Soda Core</a></strong><br /><sub>DATA / PRIVACY</sub></td>
-    <td valign="top">Prevented SQL Server connection parameter values from leaking into logs (<a href="https://github.com/sodadata/soda-core/pull/2762">#2762</a>).</td>
+    <td valign="top"><strong><a href="https://github.com/sodadata/soda-core">Soda Core</a></strong>&nbsp; <sub>DATA / PRIVACY</sub><br />Prevented SQL Server connection parameter values from leaking into logs (<a href="https://github.com/sodadata/soda-core/pull/2762">#2762</a>).</td>
   </tr>
   <tr>
-    <td width="25%" valign="top"><strong><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp</a></strong><br /><sub>AST / JAVASCRIPT</sub></td>
-    <td valign="top">Replaced syntax-specific validation with AST inspection so declarations, expressions, and arrow functions follow the same curriculum rule (<a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/69520">#69520</a>).</td>
+    <td valign="top"><strong><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp</a></strong>&nbsp; <sub>AST / JAVASCRIPT</sub><br />Replaced syntax-specific validation with AST inspection so declarations, expressions, and arrow functions follow the same curriculum rule (<a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/69520">#69520</a>).</td>
   </tr>
 </table>
 
