@@ -9,13 +9,22 @@
         transform-box: fill-box;
         transform-origin: center;
       }
+      .float-mark {
+        animation: bob 5.2s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
       @keyframes flow { to { stroke-dashoffset: -160; } }
       @keyframes pulse {
         0%, 100% { opacity: 0.45; transform: scale(0.8); }
         50% { opacity: 1; transform: scale(1.2); }
       }
+      @keyframes bob {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
       @media (prefers-reduced-motion: reduce) {
-        .flow-line, .pulse-node { animation: none; }
+        .flow-line, .pulse-node, .float-mark { animation: none; }
       }
     </style>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
@@ -36,20 +45,33 @@
   <rect width="680" height="360" rx="28" fill="url(#grid)" />
   <circle cx="602" cy="18" r="190" fill="url(#glow)" />
 
-  <g fill="none" stroke="#79e8c7" stroke-opacity="0.4">
-    <path d="M408 94 C470 44 544 45 652 104" stroke-width="2" />
-    <path class="flow-line" d="M391 124 C481 73 551 92 663 151" stroke-width="1" stroke-dasharray="7 9" />
-    <ellipse cx="553" cy="90" rx="91" ry="47" transform="rotate(12 553 90)" />
+  <g fill="none" stroke="#79e8c7" stroke-opacity="0.32">
+    <path d="M410 101 C476 48 548 52 662 111" stroke-width="2" />
+    <path class="flow-line" d="M396 130 C484 81 555 97 670 157" stroke-width="1" stroke-dasharray="7 9" />
+    <ellipse cx="568" cy="91" rx="88" ry="59" transform="rotate(10 568 91)" stroke="#ffc978" stroke-opacity="0.22" />
+  </g>
+  <g transform="translate(574 88)">
+    <g class="float-mark">
+      <circle r="60" fill="#f8f3e7" fill-opacity="0.96" stroke="#ffc978" stroke-opacity="0.72" stroke-width="2" />
+      <circle cx="-31" cy="-31" r="16" fill="#f8f3e7" stroke="#0b2430" stroke-width="7" />
+      <circle cx="31" cy="-31" r="16" fill="#f8f3e7" stroke="#0b2430" stroke-width="7" />
+      <ellipse cy="5" rx="45" ry="43" fill="#fdfbf5" stroke="#0b2430" stroke-width="7" />
+      <circle cx="-16" cy="-4" r="4" fill="#0b2430" />
+      <circle cx="16" cy="-4" r="4" fill="#0b2430" />
+      <path d="M0 6 L-5 14 Q0 19 5 14 Z" fill="#0b2430" />
+      <path d="M0 18 C-2 29 -12 29 -15 22 M0 18 C2 29 12 29 15 22" fill="none" stroke="#0b2430" stroke-width="4" stroke-linecap="round" />
+    </g>
   </g>
   <g fill="#9cf2d7">
-    <circle cx="456" cy="65" r="4" />
-    <circle class="pulse-node" cx="553" cy="90" r="7" />
-    <circle cx="632" cy="92" r="4" />
+    <circle cx="448" cy="72" r="4" />
+    <circle class="pulse-node" cx="493" cy="112" r="5" />
+    <circle cx="654" cy="122" r="4" />
   </g>
 
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="44" y="126" fill="#f4fbf8" font-size="62" font-weight="700" letter-spacing="1">Nianze Wu</text>
-    <text x="47" y="173" fill="#b9d8cf" font-size="23">AI for Science and reliable generative systems</text>
+    <text x="47" y="63" fill="#ffc978" font-size="13" font-weight="700" letter-spacing="3">HELLO, I'M</text>
+    <text x="44" y="124" fill="#f4fbf8" font-size="58" font-weight="700" letter-spacing="1">Nianze Wu</text>
+    <text x="47" y="171" fill="#b9d8cf" font-size="23">AI for Science and reliable generative systems</text>
 
     <g font-size="15" font-weight="600" letter-spacing="1.3">
       <rect x="46" y="220" width="149" height="40" rx="20" fill="#54e3b5" fill-opacity="0.14" stroke="#54e3b5" stroke-opacity="0.55" />

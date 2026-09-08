@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  Information and Computing Science undergraduate at Xiamen University,<br />
-  building reproducible AI systems and tested open-source improvements.
+  I study Information and Computing Science at Xiamen University.<br />
+  Most days, I am somewhere between a research question and the code needed to test it.
 </p>
 
 <p align="center">
@@ -21,7 +21,15 @@
   <img src="https://img.shields.io/badge/Cloudflare_Workers-0B2430?style=flat-square&logo=cloudflareworkers&logoColor=54E3B5" alt="Cloudflare Workers" />
 </p>
 
-## Building
+<table>
+  <tr>
+    <td align="center" width="33%"><strong>64+</strong><br /><sub>public commits on Xingma Qihang</sub></td>
+    <td align="center" width="33%"><strong>73</strong><br /><sub>coding tasks with trusted checks</sub></td>
+    <td align="center" width="33%"><strong>5</strong><br /><sub>merged upstream pull requests</sub></td>
+  </tr>
+</table>
+
+## Selected work
 
 ### [Xingma Qihang / 星码奇航](https://github.com/farlyfeifei/xingma-qihang)
 
@@ -40,4 +48,14 @@ An original browser-based Python learning platform for young learners. I worked 
 
 I am exploring physics-aware generative modeling and optimization for AI4S, alongside reliability and security in generative AI infrastructure. I care about work that can be reproduced, tested under failure, and explained from design decision to observable result.
 
-Open to thoughtful collaboration around AI4S, generative systems, and reliable ML infrastructure.
+## Contribution rhythm
+
+<p align="center">
+  <a href="https://github.com/wunianze666-netizen?tab=overview">
+    <img src="https://ghchart.rshah.org/54e3b5/wunianze666-netizen" alt="Nianze Wu's public GitHub contribution calendar" width="100%" />
+  </a>
+</p>
+
+## A little more
+
+I like clean interfaces, concise technical writing, and software that still makes sense when something goes wrong. I am open to thoughtful collaboration around AI4S, generative systems, and reliable ML infrastructure.
