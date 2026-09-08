@@ -1,49 +1,39 @@
-# Nianze Wu
+<p align="center">
+  <img src="./assets/profile-header.svg" alt="Nianze Wu - AI for Science, generative systems, and open source" width="100%" />
+</p>
 
-I am an Information and Computing Science undergraduate at Xiamen University,
-working at the intersection of **AI for Science**, **generative AI**, and
-**reliable machine learning systems**.
+<p align="center">
+  Information and Computing Science undergraduate at Xiamen University.<br />
+  I build reproducible AI systems and contribute tested fixes to open-source ML projects.
+</p>
 
-I enjoy turning research and product ideas into reproducible software: tested
-Python and PyTorch pipelines, failure-aware services, and tools that make
-open-source collaboration easier. My current interests include physics-aware
-generation, multimodal systems, inference reliability, and developer tooling.
+<p align="center">
+  <code>Python</code>&nbsp;&nbsp;
+  <code>PyTorch</code>&nbsp;&nbsp;
+  <code>C++</code>&nbsp;&nbsp;
+  <code>TypeScript</code>&nbsp;&nbsp;
+  <code>React</code>&nbsp;&nbsp;
+  <code>Cloudflare</code>&nbsp;&nbsp;
+  <code>Linux</code>
+</p>
 
-## Current focus
+## Building
 
-- Exploring physics-aware generative modeling and optimization for AI4S.
-- Studying reliability, security boundaries, and evaluation in AIGC systems.
-- Contributing focused fixes and regression tests to established ML projects.
+### [Xingma Qihang / 星码奇航](https://github.com/farlyfeifei/xingma-qihang)
 
-## Selected projects
+An original browser-based Python learning platform for young learners. I worked on the cloud platform and deterministic verification path: D1-backed course and progress data, Auth0 integration, trusted checks for all 73 coding tasks, retryable cold starts, and public-demo reliability. AI assists the learning experience but never decides whether a submission passes.
 
-### [TeenX](https://github.com/wunianze666-netizen/TeenX)
+[Live application](https://python.farly.me) | [My commits](https://github.com/farlyfeifei/xingma-qihang/commits/main/?author=wunianze666-netizen) | [Architecture and constraints](https://github.com/farlyfeifei/xingma-qihang#架构)
 
-An AI team-building platform for young learners, developed on top of the
-Paperclip agent orchestration control plane. The project adds recoverable task
-workflows, static artifact review, server-sent progress updates, and explicit
-privacy and safety boundaries for a youth-facing experience.
+## Open-source engineering
 
-### [OSS PR Follow-up](https://github.com/wunianze666-netizen/oss-pr-followup)
+- **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** - hardened external image downloads and injected HTTP sessions against SSRF bypasses, including socket-level and adversarial regression coverage ([#9525](https://github.com/invoke-ai/InvokeAI/pull/9525), [#9524](https://github.com/invoke-ai/InvokeAI/pull/9524)).
+- **[Hugging Face Diffusers](https://github.com/huggingface/diffusers)** - fixed required-input metadata generation for custom Mellon blocks and added a regression test ([#13888](https://github.com/huggingface/diffusers/pull/13888)).
+- **[sktime](https://github.com/sktime/sktime)** - migrated the multithreading capability tag to the typed tag registry while preserving lookup behavior ([#10848](https://github.com/sktime/sktime/pull/10848)).
+- **[Soda Core](https://github.com/sodadata/soda-core)** - prevented SQL Server connection parameter values from leaking into logs and added security regression coverage ([#2762](https://github.com/sodadata/soda-core/pull/2762)).
 
-A dependency-free Python CLI that turns a contributor's open pull requests into
-actionable Markdown or JSON reports. It uses GitHub REST and GraphQL APIs to
-surface review threads, CI state, mergeability, and next actions while remaining
-strictly read-only. The project includes failure-safe file output and Linux and
-Windows CI coverage.
+## Current direction
 
-## Open-source work
+I am exploring physics-aware generative modeling and optimization for AI4S, alongside reliability and security in generative AI infrastructure. I care about work that can be reproduced, tested under failure, and explained from design decision to observable result.
 
-| Project | Contribution |
-| --- | --- |
-| [InvokeAI](https://github.com/invoke-ai/InvokeAI) | Hardened external image downloads and injected HTTP sessions against SSRF bypasses, with socket-level and adversarial regression coverage ([#9525](https://github.com/invoke-ai/InvokeAI/pull/9525), [#9524](https://github.com/invoke-ai/InvokeAI/pull/9524)). |
-| [Hugging Face Diffusers](https://github.com/huggingface/diffusers) | Fixed required-input metadata generation for custom Mellon blocks and added regression coverage ([#13888](https://github.com/huggingface/diffusers/pull/13888)). |
-| [sktime](https://github.com/sktime/sktime) | Migrated the multithreading capability tag to the typed tag registry while preserving lookup behavior ([#10848](https://github.com/sktime/sktime/pull/10848)). |
-| [Soda Core](https://github.com/sodadata/soda-core) | Prevented SQL Server connection parameter values from leaking into logs and added a security regression test ([#2762](https://github.com/sodadata/soda-core/pull/2762)). |
-
-## Working with
-
-`Python` | `PyTorch` | `C++` | `TypeScript` | `React` | `REST APIs` | `Git` | `Linux`
-
-I am interested in open-source collaboration around AI4S, generative systems,
-and reliable ML infrastructure.
+Open to thoughtful collaboration around AI4S, generative systems, and reliable ML infrastructure.

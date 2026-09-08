@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
+  <title id="title">Nianze Wu</title>
+  <desc id="description">AI for Science, generative systems, and open-source engineering</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f" />
+      <stop offset="0.55" stop-color="#0b2430" />
+      <stop offset="1" stop-color="#12372e" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#54e3b5" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#54e3b5" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#8fdcc5" stroke-opacity="0.09" />
+    </pattern>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#background)" />
+  <rect width="1200" height="320" rx="28" fill="url(#grid)" />
+  <circle cx="1030" cy="62" r="255" fill="url(#glow)" />
+
+  <g fill="none" stroke="#79e8c7" stroke-opacity="0.45">
+    <path d="M790 244 C850 173 897 181 941 117 S1047 52 1144 100" stroke-width="2" />
+    <path d="M805 271 C882 221 913 232 972 182 S1085 123 1164 145" stroke-width="1" stroke-dasharray="7 9" />
+    <ellipse cx="1015" cy="153" rx="132" ry="76" transform="rotate(-17 1015 153)" />
+  </g>
+
+  <g fill="#9cf2d7">
+    <circle cx="833" cy="205" r="5" />
+    <circle cx="941" cy="117" r="6" />
+    <circle cx="1015" cy="153" r="8" />
+    <circle cx="1101" cy="78" r="5" />
+    <circle cx="1128" cy="188" r="4" />
+  </g>
+  <circle cx="1015" cy="153" r="18" fill="#54e3b5" opacity="0.28" filter="url(#soft-glow)" />
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="76" y="116" fill="#f4fbf8" font-size="56" font-weight="700" letter-spacing="1">Nianze Wu</text>
+    <text x="79" y="158" fill="#b9d8cf" font-size="22" font-weight="400">Information and Computing Science at Xiamen University</text>
+
+    <g font-size="15" font-weight="600" letter-spacing="1.6">
+      <rect x="78" y="202" width="150" height="38" rx="19" fill="#54e3b5" fill-opacity="0.14" stroke="#54e3b5" stroke-opacity="0.55" />
+      <text x="101" y="227" fill="#9cf2d7">AI FOR SCIENCE</text>
+
+      <rect x="242" y="202" width="218" height="38" rx="19" fill="#54e3b5" fill-opacity="0.1" stroke="#54e3b5" stroke-opacity="0.42" />
+      <text x="265" y="227" fill="#c3e8dd">GENERATIVE SYSTEMS</text>
+
+      <rect x="474" y="202" width="163" height="38" rx="19" fill="#54e3b5" fill-opacity="0.08" stroke="#54e3b5" stroke-opacity="0.35" />
+      <text x="497" y="227" fill="#c3e8dd">OPEN SOURCE</text>
+    </g>
+  </g>
+</svg>
