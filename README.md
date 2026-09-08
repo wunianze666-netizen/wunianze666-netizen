@@ -35,34 +35,22 @@
   </tr>
 </table>
 
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/work-method-mobile.svg" />
+    <img src="./assets/work-method.svg" alt="A repeatable engineering loop: frame, build, stress, and explain" width="100%" />
+  </picture>
+</p>
+
 ## Selected work
 
 ### [Xingma Qihang / 星码奇航](https://python.farly.me)
 
-<a href="https://python.farly.me">
-  <img src="./assets/xingma-qihang-preview.png" alt="Xingma Qihang public Python learning application" width="100%" />
-</a>
-
 <table>
   <tr>
-    <td width="66%" valign="top"><strong>What it is</strong><br /><sub>An original browser-based Python learning platform for young learners, built around short lessons, real code execution, and observable progress.</sub></td>
-    <td width="34%" valign="top"><strong>My focus</strong><br /><sub>Cloud platform, deterministic verification, identity, data consistency, and public-demo reliability.</sub></td>
+    <td valign="top"><strong>LEARNING SYSTEMS / RELIABILITY</strong><br /><br />A browser-based Python learning experience built around short lessons, real code execution, and observable progress. My contribution focused on dependable evaluation and the engineering quality of the public learning path.<br /><br /><a href="https://python.farly.me">Visit the public application</a></td>
   </tr>
 </table>
-
-I worked on D1-backed course and progress data, Auth0 integration, trusted checks for published coding tasks, retryable cold starts, and failure-safe navigation. AI assists the learning experience but never decides whether a submission passes.
-
-[Explore the public application](https://python.farly.me)
-
-<details>
-  <summary><strong>Engineering notes</strong></summary>
-  <br />
-
-- Kept pass/fail decisions in bounded deterministic verifiers while leaving AI in an explanatory role.
-- Versioned course content and progress events so published updates do not silently invalidate learner state.
-- Treated cold starts, seed retries, primary-read consistency, and unavailable verifiers as explicit failure paths.
-
-</details>
 
 ## Selected upstream work
 
