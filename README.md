@@ -11,6 +11,13 @@
 </p>
 
 <p align="center">
+  <a href="#selected-work">Selected work</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#selected-upstream-work">Open source</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#now">Current focus</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="#beyond-the-model">Beyond the model</a>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cpytorch%2Ccpp%2Cts%2Creact%2Ccloudflare&amp;theme=dark&amp;perline=6" />
     <img src="https://skillicons.dev/icons?i=python%2Cpytorch%2Ccpp%2Cts%2Creact%2Ccloudflare&amp;theme=light&amp;perline=6" alt="Python, PyTorch, C++, TypeScript, React, and Cloudflare" />
@@ -30,18 +37,57 @@
 
 ## Selected work
 
-### [Xingma Qihang / 星码奇航](https://github.com/farlyfeifei/xingma-qihang)
+### [Xingma Qihang / 星码奇航](https://python.farly.me)
 
-An original browser-based Python learning platform for young learners. I worked on the cloud platform and deterministic verification path: D1-backed course and progress data, Auth0 integration, trusted checks for all 73 coding tasks, retryable cold starts, and public-demo reliability. AI assists the learning experience but never decides whether a submission passes.
+<a href="https://python.farly.me">
+  <img src="./assets/xingma-qihang-preview.png" alt="Xingma Qihang public Python learning application" width="100%" />
+</a>
 
-[Live application](https://python.farly.me) | [My commits](https://github.com/farlyfeifei/xingma-qihang/commits/main/?author=wunianze666-netizen) | [Architecture and constraints](https://github.com/farlyfeifei/xingma-qihang#架构)
+<table>
+  <tr>
+    <td width="66%" valign="top"><strong>What it is</strong><br /><sub>An original browser-based Python learning platform for young learners, built around short lessons, real code execution, and observable progress.</sub></td>
+    <td width="34%" valign="top"><strong>My focus</strong><br /><sub>Cloud platform, deterministic verification, identity, data consistency, and public-demo reliability.</sub></td>
+  </tr>
+</table>
+
+I worked on D1-backed course and progress data, Auth0 integration, trusted checks for published coding tasks, retryable cold starts, and failure-safe navigation. AI assists the learning experience but never decides whether a submission passes.
+
+[Explore the public application](https://python.farly.me)
+
+<details>
+  <summary><strong>Engineering notes</strong></summary>
+  <br />
+
+- Kept pass/fail decisions in bounded deterministic verifiers while leaving AI in an explanatory role.
+- Versioned course content and progress events so published updates do not silently invalidate learner state.
+- Treated cold starts, seed retries, primary-read consistency, and unavailable verifiers as explicit failure paths.
+
+</details>
 
 ## Selected upstream work
 
-- **[InvokeAI](https://github.com/invoke-ai/InvokeAI)** - closed SSRF gaps in external image downloads and injected HTTP sessions, backed by adversarial socket-level tests ([#9525](https://github.com/invoke-ai/InvokeAI/pull/9525), [#9524](https://github.com/invoke-ai/InvokeAI/pull/9524)).
-- **[Hugging Face Diffusers](https://github.com/huggingface/diffusers)** - fixed required-input metadata for custom Mellon pipeline blocks ([#13888](https://github.com/huggingface/diffusers/pull/13888)).
-- **[sktime](https://github.com/sktime/sktime)** - migrated the multithreading capability to the typed tag registry without changing lookup behavior ([#10848](https://github.com/sktime/sktime/pull/10848)).
-- **[Soda Core](https://github.com/sodadata/soda-core)** - prevented SQL Server connection parameter values from leaking into logs ([#2762](https://github.com/sodadata/soda-core/pull/2762)).
+<table>
+  <tr>
+    <td width="25%" valign="top"><strong><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></strong><br /><sub>SECURITY / PYTHON</sub></td>
+    <td valign="top">Closed two SSRF paths in external image downloads and injected HTTP sessions, backed by adversarial socket-level tests (<a href="https://github.com/invoke-ai/InvokeAI/pull/9525">#9525</a>, <a href="https://github.com/invoke-ai/InvokeAI/pull/9524">#9524</a>).</td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top"><strong><a href="https://github.com/huggingface/diffusers">Diffusers</a></strong><br /><sub>GENERATIVE AI / PYTHON</sub></td>
+    <td valign="top">Corrected required-input metadata for custom Mellon pipeline blocks and added focused regression coverage (<a href="https://github.com/huggingface/diffusers/pull/13888">#13888</a>).</td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top"><strong><a href="https://github.com/sktime/sktime">sktime</a></strong><br /><sub>ML INFRA / TYPING</sub></td>
+    <td valign="top">Migrated the multithreading capability to the typed tag registry while preserving lookup behavior (<a href="https://github.com/sktime/sktime/pull/10848">#10848</a>).</td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top"><strong><a href="https://github.com/sodadata/soda-core">Soda Core</a></strong><br /><sub>DATA / PRIVACY</sub></td>
+    <td valign="top">Prevented SQL Server connection parameter values from leaking into logs (<a href="https://github.com/sodadata/soda-core/pull/2762">#2762</a>).</td>
+  </tr>
+  <tr>
+    <td width="25%" valign="top"><strong><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp</a></strong><br /><sub>AST / JAVASCRIPT</sub></td>
+    <td valign="top">Replaced syntax-specific validation with AST inspection so declarations, expressions, and arrow functions follow the same curriculum rule (<a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/69520">#69520</a>).</td>
+  </tr>
+</table>
 
 ## Now
 
