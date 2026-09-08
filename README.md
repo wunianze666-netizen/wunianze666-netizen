@@ -8,13 +8,12 @@
 </p>
 
 <p align="center">
-  <code>Python</code>&nbsp;&nbsp;
-  <code>PyTorch</code>&nbsp;&nbsp;
-  <code>C++</code>&nbsp;&nbsp;
-  <code>TypeScript</code>&nbsp;&nbsp;
-  <code>React</code>&nbsp;&nbsp;
-  <code>Cloudflare</code>&nbsp;&nbsp;
-  <code>Linux</code>
+  <img src="https://img.shields.io/badge/Python-0B2430?style=for-the-badge&logo=python&logoColor=54E3B5" alt="Python" />
+  <img src="https://img.shields.io/badge/PyTorch-0B2430?style=for-the-badge&logo=pytorch&logoColor=54E3B5" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/C%2B%2B-0B2430?style=for-the-badge&logo=cplusplus&logoColor=54E3B5" alt="C++" />
+  <img src="https://img.shields.io/badge/TypeScript-0B2430?style=for-the-badge&logo=typescript&logoColor=54E3B5" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-0B2430?style=for-the-badge&logo=react&logoColor=54E3B5" alt="React" />
+  <img src="https://img.shields.io/badge/Cloudflare_Workers-0B2430?style=for-the-badge&logo=cloudflareworkers&logoColor=54E3B5" alt="Cloudflare Workers" />
 </p>
 
 ## Building

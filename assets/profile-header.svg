@@ -2,6 +2,26 @@
   <title id="title">Nianze Wu</title>
   <desc id="description">AI for Science, generative systems, and open-source engineering</desc>
   <defs>
+    <style>
+      .flow-line {
+        animation: flow 10s linear infinite;
+      }
+      .pulse-node {
+        animation: pulse 3.6s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      @keyframes flow {
+        to { stroke-dashoffset: -160; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.45; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.25); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .flow-line, .pulse-node { animation: none; }
+      }
+    </style>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111f" />
       <stop offset="0.55" stop-color="#0b2430" />
@@ -25,18 +45,22 @@
 
   <g fill="none" stroke="#79e8c7" stroke-opacity="0.45">
     <path d="M790 244 C850 173 897 181 941 117 S1047 52 1144 100" stroke-width="2" />
-    <path d="M805 271 C882 221 913 232 972 182 S1085 123 1164 145" stroke-width="1" stroke-dasharray="7 9" />
+    <path class="flow-line" d="M805 271 C882 221 913 232 972 182 S1085 123 1164 145" stroke-width="1" stroke-dasharray="7 9" />
     <ellipse cx="1015" cy="153" rx="132" ry="76" transform="rotate(-17 1015 153)" />
   </g>
 
   <g fill="#9cf2d7">
     <circle cx="833" cy="205" r="5" />
     <circle cx="941" cy="117" r="6" />
-    <circle cx="1015" cy="153" r="8" />
+    <circle class="pulse-node" cx="1015" cy="153" r="8" />
     <circle cx="1101" cy="78" r="5" />
     <circle cx="1128" cy="188" r="4" />
   </g>
   <circle cx="1015" cy="153" r="18" fill="#54e3b5" opacity="0.28" filter="url(#soft-glow)" />
+  <circle r="5" fill="#d9fff3">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M790 244 C850 173 897 181 941 117 S1047 52 1144 100" />
+    <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite" />
+  </circle>
 
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
     <text x="76" y="116" fill="#f4fbf8" font-size="56" font-weight="700" letter-spacing="1">Nianze Wu</text>
